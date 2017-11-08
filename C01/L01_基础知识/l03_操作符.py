@@ -10,3 +10,4 @@ S='See you in www.joinpython.com,where are you'
 print a+b,b/a,b%a,a**b
 print "www" in S
 print "what" in S
+print "where" in S

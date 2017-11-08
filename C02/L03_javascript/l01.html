@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<button onclick="F1('meimei','han')">F1点击这里</button>
+
+
+<button onclick="F2()">F2点击这里</button>
+<p id="demo"></p>
+
+<button onclick="F3()">F3点击这里</button>
+<p id="demo3"></p>
+
+<button onclick="F4()">F4点击这里</button>
+<p id="demo4"></p>
+
+<button onclick="F5()">F5点击这里</button>
+<p id="demo5">请访问 Microsoft!</p>
+
+<script>
+function F1(firstname,lastname)
+{
+alert("Welcome " + firstname + "." + lastname);
+}
+</script>
+
+<script>
+function F2()
+{
+var x="";
+var time=new Date().getHours();
+if (time<10)
+  {
+  x="Good morning";
+  }
+else if (time<20)
+  {
+  x="Good day";
+  }
+else
+  {
+  x="Good evening";
+  }
+document.getElementById("demo").innerHTML=x;
+}
+</script>
+
+<script>
+function F3()
+{
+var x="";
+for (var i=0;i<5;i++)
+  {
+  x=x + "The number is " + i + "<br>";
+  }
+document.getElementById("demo3").innerHTML=x;
+}
+</script>
+
+<script>
+function F4()
+{
+var x;
+var txt="";
+var person={fname:"Bill",lname:"Gates",age:56}; 
+
+for (x in person)
+{
+txt=txt + person[x];
+}
+
+document.getElementById("demo4").innerHTML=txt;
+}
+</script>
+<script>
+function F5() {
+    var str = document.getElementById("demo5").innerHTML; 
+    var txt = str.replace(/microsoft/i,"joinpython");
+    document.getElementById("demo5").innerHTML = txt;
+}
+</script>
+
+<script language="javascript">
+function test($1)
+{
+return "<font color='red'>"+$1+"</font>"
+}
+var s=prompt("请输入在查找的字符","人");
+var reg=new RegExp("("+s+")","g");
+var str="中华人民共和国，中华人民共和国";
+var newstr=str.replace(reg,test);
+document.write(newstr);
+</script>
+</body>
+</html>

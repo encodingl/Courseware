@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+    #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 '''
 Created on 2017-10-31 16:33:48;  @author: joinpython.com
@@ -12,7 +12,14 @@ e="""hi
 I am 
 e
 """
+s1="im python"
+sx=s1
+print s1.strip("python")
+print s1
+print sx
+
 print a
+
 print b
 print c
 print d

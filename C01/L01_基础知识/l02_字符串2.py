@@ -7,6 +7,7 @@ Created on 2017-10-31 18:23:16;  @author: joinpython.com
 S='See you in www.joinpython.com,where are you'
 sub1="you"
 s2="12345"
+
 print S.find(sub1)
 print S.count(sub1)
 print S.upper()
